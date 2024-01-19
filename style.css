@@ -1,0 +1,171 @@
+/* Navbar */
+.navbar-brand{
+    font-family: 'viga',sans-serif;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(jumbotron-bg.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+.jumbotron .display-4{
+    padding-top: 165px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    padding-bottom: 30px;
+    font-size: 36px;
+    font-weight: 200;
+}
+.tombol{
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    top: 0;
+}
+.container .navbar{
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+.jumbotron .container{
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+/* Info Panel */
+.info-panel{
+    background-color: white;
+    margin-top: -60px;
+    position: absolute;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.info-panel img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 15px !important;
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.info-panel p{
+    color: #acacac;
+}
+
+/* Workingspace */
+.workingspace{
+    margin-top: 300px;
+    text-align: center;
+}
+.workingspace h3{
+    font-size: 52px;
+    font-weight: 50;
+    margin-top: 30px;
+}
+.workingspace p{
+    color: #ACACAC;
+    margin: 35px 0;
+}
+
+/* Quotes */
+.Quotes h5{
+    margin-top: 90px;
+    font-weight: 200;
+    font-size: 25px;
+    font-style: italic;
+    color: #0B63DC;
+    text-align: center;
+}
+.Quotes img{
+    margin-top: 20px;
+    width: 60px;
+    margin: 50px 20px 5px;
+    opacity: 0.7;
+}
+.Quotes img.utama{
+    width: 90px;
+    opacity: 1;
+    margin-top: 35px;
+}
+.Quotes h6{
+    color: black;
+    font-weight: bold;
+}
+.Quotes p{
+    color: #ACACAC;
+}
+
+/* Footer */
+.footer h5{
+    font-size: 20px;
+    color: #ACACAC;
+}
+.footer{
+    margin-top: 70px !important;
+    min-height: 60px;
+}
+
+
+
+/* FOR DESKTOP */
+@media (min-width: 992px) {
+    .nav-link{
+        text-transform: uppercase;
+    }
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        height: 600px;
+        margin-top: -75px;
+    }
+    .jumbotron .lead{
+        font-size: 62px;
+    }
+    .jumbotron .display-4{
+        font-weight: 200;
+        font-size: 62px;
+    }
+    .jumbotron .display-4 b{
+        font-weight: 500;
+    }
+    .workingspace{
+        margin-top: 200px;
+        text-align: left;
+    }
+    .Quotes h5{
+        font-size: 32px;
+        text-align: left;
+    }
+}
